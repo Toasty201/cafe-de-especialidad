@@ -1,0 +1,178 @@
+
+/* para el caso del h1 o el p, usé los tags, ya que son los unicos que aparecen en el html
+        de ser necesario, le agrego una clase */
+
+
+:root {
+    --color-primary: #FFECDC;
+    --color-secondary: #5A2911;
+    --text-primary: 'Trispace';
+  }
+
+  body{
+    background-image: url(../images/background.jpg);
+  }
+  main{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-areas:    "nav" 
+                            "section" 
+                            "footer" ; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    gap: 4em;
+    background-color: var(--color-primary);
+    padding-bottom: 1em; 
+    color: var(--color-secondary);
+}
+
+header{
+    grid-area: nav;
+}
+
+section{
+    grid-area: section;
+    text-align: center;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo{
+    margin: 1em;
+    height: 55%;
+    width: 15%;
+    align-self: center;
+}
+
+header{
+    display: flex;
+}
+
+.list{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Bitter', 'serif';
+    font-weight: 600;
+    color: inherit;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+}
+.principal{
+    width: 75%;
+    order: 1;
+    align-self: center;
+
+}
+
+.container{
+    order: 2;
+}
+
+h1{
+    font-family: "bitter";
+    font-weight: 900;
+}
+
+p{
+    font-family: "bitter";
+    font-weight: 400;
+    font-size: large;
+    padding: 1em;
+}
+
+.link{
+    font-size: 29px;
+    border-radius: 1em;
+    padding: 0.2em 2em;
+    text-decoration: none;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+
+
+@media screen and (min-width:768px) {
+    body{
+        overflow: hidden;
+    }
+
+    .logo{
+        height: 30%;
+        width: 5%;
+        margin-left: 2em;
+    }
+
+    header{
+        grid-template-rows: auto auto auto;
+        justify-content: space-between;
+    }
+
+    nav{
+        align-self: center;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: row;
+    }
+    a{
+        padding: 0.5em 1em;
+    }
+
+    h1{
+        font-size: x-large;
+
+    }
+
+    main{
+        gap: 3em;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    main{
+        margin: 5vh 1vw;
+        height: 90vh;
+    }
+
+    a{
+        font-size: x-large;
+        padding: 0.5em 4em;
+    }
+
+    article{
+        flex-direction: row;
+    }
+
+    .container{
+        order: 0;
+    }
+
+    .principal {
+        width: 50%;
+        padding: 0 1em;
+    }
+
+    p{
+        FONT-WEIGHT: 600;
+    }
+    
+    footer{
+        justify-content: flex-start;
+
+    }
+}
