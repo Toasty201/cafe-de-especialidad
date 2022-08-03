@@ -26,7 +26,7 @@ header{
 
 .logo{
   width: 3em;
-  padding: 1em;
+  padding: 0em;
 }
 
 nav{
@@ -151,27 +151,23 @@ article{
   font-size: xxx-large;
 }
 
-.formula{
-  display: grid;
-  width: 95%;
-  grid-template-areas:  "nombre " "apellido"
-                        "telefono" "telefono"
-                        "direccion" "direccion"
-                        "pregunta" "pregunta";
-  grid-template-rows: auto;
-  grid-template-columns: auto;
-  gap: 1em;
-  padding-top: 2em;
-  margin-bottom: 2em;
+.form{
+  font-family: var(--text-primary);
 }
+
 
 input{
   height: 2em;
 }
 
 button{
-  color: var(--color-secondary);
-  border-radius: 10em;
+  background-color: var(--color-primary);
+  color: var(--color-primary) !important;
+}
+
+.send{
+  text-align: center;
+  padding: 2em;
 }
 
 
@@ -221,7 +217,7 @@ footer p{
   .logo{
     height: 3em;
     width: 3em;
-    padding: 1em;
+    padding: 0em;
   }
 
   .I_contacto{
@@ -255,7 +251,7 @@ footer p{
   .logo{
     height: 3em;
     width: 3em;
-    padding: 1em;
+    padding: 0em;
   }
   
 
