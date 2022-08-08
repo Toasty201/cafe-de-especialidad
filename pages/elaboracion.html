@@ -18,19 +18,8 @@
 </head>
 
 <body>
-    <!-- <header>
-        <img class="logo" src="../images/logo.png" alt="Cafe de Espacialidad">
-        <nav>
-            <ul class="list">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/saber.html">Conoce más</a></li>
-                <li><a href="../pages/elaboracion.html">Elaboración</a></li>
-                <li><a href="../pages/cafes.html">Cafés</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header> -->
-    <nav class="navbar navbar-expand-md navbar-dark" aria-label="Seventh navbar example">
+
+    <nav class="navbar navbar-expand-md navbar-dark navcolor" aria-label="Seventh navbar example">
         <div class="container-fluid">
             <img class="logo" src="../images/logo.png" alt="Cafe de Espacialidad">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleXxl"
@@ -42,19 +31,19 @@
                 <div class="row">
                     <ul class="navbar-nav mb-2 mb-xl-0 col-12">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link navfont" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/saber.html">Conocé</a>
+                            <a class="nav-link navfont" href="../pages/saber.html">Conocé</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/elaboracion.html">Elaboración</a>
+                            <a class="nav-link navfont" href="../pages/elaboracion.html">Elaboración</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/cafes.html">Cafés</a>
+                            <a class="nav-link navfont" href="../pages/cafes.html">Cafés</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link navfont" href="../pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -90,12 +79,28 @@
                 <p>Una vez abierto el paquete, conservarlo cerrado en el refrigerador.</p>
             </div>
         </section>
-        <div class="iframe">
-            <iframe width="700" height="315" src="https://www.youtube.com/embed/yAfdmRb_xLQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
+
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/comparacion.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/contacto.jpg" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/cafe-topdown.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <section class="content">
             <div class="recipe">
@@ -114,12 +119,28 @@
                 <img clas="Cafeteras" src="../images/e2_maquina_express.png" alt="Express">
             </aside>
         </section>
-        <div class="iframe">
-            <iframe width="700" height="315" src="https://www.youtube.com/embed/Ii4y8z3hFY8"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
+
+        <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/comparacion.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/contacto.jpg" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/comparacion.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <section class="content">
             <aside class="aside">
@@ -140,13 +161,28 @@
                 <p>Una vez abierto el paquete, conservarlo cerrado en el refrigerador.</p>
             </div>
         </section>
-        <div class="iframe">
-            <iframe width="700" height="315" src="https://www.youtube.com/embed/Nnxxfi0tuDg"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
 
+        <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/comparacion.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/contacto.jpg" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/comparacion.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         <section class="content">
             <div class="recipe">
                 <h2 id="chemex">Chemex</h2>
@@ -175,13 +211,28 @@
                 <h3>Tipo de Cafetera</h3>
                 <img clas="Cafeteras" src="../images/e2_maquina_chemex.png" alt="chemex">
             </aside>
-        </section>
-        <div class="iframe">
-            <iframe width="700" height="315" src="https://www.youtube.com/embed/XeuiIX8QL4I"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
+        </section> 
+        <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/comparacion.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/contacto.jpg" class="d-block w-80 carousel-img" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/comparacion.png" class="d-block w-80 carousel-img" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </article>
 
     <footer>
