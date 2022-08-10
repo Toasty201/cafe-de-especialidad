@@ -1,0 +1,307 @@
+/*barra separadora
+  hacer 4divs dentro de un div
+*/
+:root {
+    --color-primary: #ffe4c4;
+    --color-secondary: #5A2911;
+    --text-primary: 'Trispace';
+    --text-secondary: 'Bitter';
+  }
+  
+  *{
+    color: var(--color-primary);
+  }
+  /* ----------- INCIO DEL NAV ----------- */
+  /* mejorar el css del nav*/
+  
+  .navcolor{
+    background-color: var(--color-primary);
+    font-family: var(--text-primary);
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+  
+  .navfont{
+    color: #000000;
+  }
+  
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    list-style-type: none;
+    font-family: var(--text-secondary);
+    font-weight: 600;
+  
+  }
+  
+  .logo{
+    width: 3em;
+    padding: 0em;
+  }
+  
+  nav{
+    padding: 1em;
+  }
+  
+  nav {
+    .list{
+    text-align: right;
+    text-decoration: none;
+    }
+  }
+    
+  .list{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  li{
+    padding-right: 4em;
+    font-size: larger;
+  }
+  
+  a{
+    color: var(--color-secondary);
+    text-decoration: none;
+  }
+  
+  
+  /* ----------- INCIO DEL BODY ----------- */
+  body{
+    background-color: var(--color-secondary);
+  }
+  
+  h1{
+    text-align: center;
+    font-family: var(--text-primary);
+    font-size: 2em;
+  }
+  
+  
+  
+  /* ----------- ELBORACION ----------- */
+  .submenu{
+    text-align: center;
+    padding: 1em;
+  }
+  
+  a{
+    display: inline;
+  }
+  .imag{
+    margin: 0 1em;
+  }
+  
+  .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    margin-top: 3em;;
+    align-items: center;
+  }
+  
+  .aside{
+    text-align: center;
+  }
+  
+  .recipe{
+    text-align: end;
+  }
+  
+  .iframe{
+    margin: 0 auto;
+    width: 700px;
+    margin-bottom: 3em;
+  }
+  
+  .carousel-img{
+    margin: auto;
+    padding: 1em 0px;
+  }
+  
+  /* ----------- CAFES ----------- */
+  .preface{
+    margin-bottom: 2em;
+  }
+  
+  article{
+    display: block;
+  }
+  
+  .separador{
+    width: 90%;
+    height: 1em;
+    margin: 1em auto;
+    background: linear-gradient(to right,#000000 0% 25%, #823915 25% 50%, #876200 50% 75%, #950900 75% 100% )
+  }
+  
+  #allCards{
+    display: grid;
+    width: 100%;
+    grid-template-areas: "card card card card";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    gap: 1em;
+    text-align: center;
+  }
+  
+  .card{
+    width: 20rem;
+  }
+  
+  .I_cards{
+    max-width: 100%
+  }
+  
+  /* ----------- INCIO CONTACTO ----------- */
+  .I_contacto{
+  
+    height: 27em;
+    background-image: url(../images/contacto.jpg);
+    background-position: center;
+    background-size: 90em;
+  }
+  
+  .contacto{
+    margin: auto;
+    font-size: xxx-large;
+  }
+  
+  .form{
+    font-family: var(--text-primary);
+  }
+  
+  
+  input{
+    height: 2em;
+  }
+  
+  button{
+    background-color: var(--color-primary);
+    color: var(--color-primary) !important;
+  }
+  
+  .send{
+    text-align: center;
+    padding: 2em;
+  }
+  
+  
+  
+  /* ----------- INCIO DEL FOOTER ----------- */
+  
+  .f_img{
+    height: 3%;
+    width: 3%;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+  }
+  
+  footer p{
+    color: var(--color-secondary);
+    text-align: center;
+  }
+  
+  .l_redes{
+    display: inline;
+    padding-right: 0.5em;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    
+    #allCards{ 
+      grid-template-areas: "card card";
+     }
+    
+    .preface{
+      text-align: center;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+  
+    .list{
+      display: flex;
+      flex-direction:column;
+    }
+  
+    .logo{
+      height: 3em;
+      width: 3em;
+      padding: 0em;
+    }
+  
+    .I_contacto{
+  
+      height: 12em;
+      background-image: url(../images/contacto.jpg);
+      background-size: 47em;
+    }
+    
+    .contacto{
+      font-size: xxx-large;
+      position: absolute;
+    } 
+  
+    .I_cards{
+      height: 2em;
+    }
+   
+    .f_img{
+      height: 4em;
+      width: 4em;
+      align-self: center;
+      margin-left: 1em
+    }
+  
+   }
+  
+  
+   @media only screen and (max-width: 425px) {
+  
+    .logo{
+      height: 3em;
+      width: 3em;
+      padding: 0em;
+    }
+    
+  
+    #allCards{ 
+     grid-template-areas: "card";
+     justify-content: center;
+    }
+   
+    .preface{
+     text-align: center;
+    }
+  
+    .I_cards{
+      height: 2em;
+    }
+  
+    .I_contacto{
+  
+      height: 12em;
+      background-image: url(../images/contacto.jpg);
+      background-size: 26em;
+    }
+    
+    .contacto{
+      position: absolute;
+    }
+  
+    .f_img{
+      height: 4em;
+      width: 4em;
+      align-self: center;
+      margin-left: 1em
+    }
+  
+   }
