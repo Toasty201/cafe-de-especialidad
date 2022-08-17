@@ -11,6 +11,10 @@
   *{
     color: var(--color-primary);
   }
+
+@mixin align {
+  text-align: center;  
+}
   /* ----------- INCIO DEL NAV ----------- */
   /* mejorar el css del nav*/
   
@@ -73,7 +77,7 @@
   }
   
   h1{
-    text-align: center;
+    @include align;
     font-family: var(--text-primary);
     font-size: 2em;
   }
@@ -82,7 +86,7 @@
   
   /* ----------- ELBORACION ----------- */
   .submenu{
-    text-align: center;
+    @include align;
     padding: 1em;
   }
   
@@ -103,7 +107,7 @@
   }
   
   .aside{
-    text-align: center;
+    @include align();
   }
   
   .recipe{
@@ -144,7 +148,7 @@
     grid-template-rows: auto;
     grid-template-columns: auto;
     gap: 1em;
-    text-align: center;
+    @include align();
   }
   
   .card{
@@ -184,7 +188,7 @@
   }
   
   .send{
-    text-align: center;
+    @include align();
     padding: 2em;
   }
   
@@ -205,7 +209,7 @@
   
   footer p{
     color: var(--color-secondary);
-    text-align: center;
+    @include align();
   }
   
   .l_redes{
@@ -220,7 +224,7 @@
      }
     
     .preface{
-      text-align: center;
+      @include align();
     }
   }
   
@@ -279,7 +283,7 @@
     }
    
     .preface{
-     text-align: center;
+      @include align();
     }
   
     .I_cards{
