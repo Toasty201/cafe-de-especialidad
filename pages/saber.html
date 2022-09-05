@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;600;900&display=swap" rel="stylesheet">
@@ -54,63 +55,83 @@
     <h1>CAFE DE ESPECIALIDAD: LO QUE TENÉS QUE SABER</h1>
 
     <section>
-        <article>
-            <h2>EL CAFÉ MÁS RICO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi
-                quis velit rem ab eligendi reprehenderit harum? A, facere totam illum consectetur dignissimos quaerat.
-                Impedit temporibus perspiciatis dolorum mollitia alias!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repudiandae quas iure beatae dicta placeat
-                distinctio illum iusto rerum, velit laudantium! Officia
-                nulla eaque, dolore accusamus modi voluptatibus laudantium veniam?</p>
-            <img src="../images/prueba.png" alt="prueba" height="20%" width="20%">
+        <article class="row align-items-center op">
+            <div class="col optext">
+                <h2>EL CAFÉ MÁS RICO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sequi
+                    quis velit rem ab eligendi reprehenderit harum? A, facere totam illum consectetur dignissimos
+                    quaerat.
+                    Impedit temporibus perspiciatis dolorum mollitia alias!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, repudiandae quas iure beatae dicta
+                    placeat
+                    distinctio illum iusto rerum, velit laudantium! Officia
+                    nulla eaque, dolore accusamus modi voluptatibus laudantium veniam?</p>
+            </div>
+            <img class="col opimg" src="../images/prueba.png" alt="prueba">
         </article>
 
-        <article>
-            <img src="../images/prueba2.jpg" alt="prueba2" height="20%" width="20%">
-            <h2>TIPO DE GRANO: ¿ROBUSTA O ARÁBICA?</h2>
-            <p>Hay dos tipos de granos de café que llegan a tu taza.
+        <article class="row align-items-center op">
+            <img class="col opimg" src="../images/Granos.jpg" alt="prueba2">
+            <div class="col optext">
+                <h2>TIPO DE GRANO: ¿ROBUSTA O ARÁBICA?</h2>
+                <p>Hay dos tipos de granos de café que llegan a tu taza.
 
-                Robusta se cultiva a menor altitud, tiene un sabor amargo intenso y mucha más cafeína que la arábica.
+                    Robusta se cultiva a menor altitud, tiene un sabor amargo intenso y mucha más cafeína que la
+                    arábica.
 
-                Arábica contiene más aceites y azúcares naturales, obteniendo un sabor mucho más afrutado y dulce.
+                    Arábica contiene más aceites y azúcares naturales, obteniendo un sabor mucho más afrutado y dulce.
 
-                El café de especialidad es 100% arábica, mientras que el café comercial es una combinación de los dos.
-            </p>
+                    El café de especialidad es 100% arábica, mientras que el café comercial es una combinación de los
+                    dos.
+                </p>
+            </div>
         </article>
 
-        <article>
-            <h2>¿TOSTADO O TORRADO?</h2>
-            <p>Después de cultivar el grano y antes de llegar a tu taza, el café se tuesta para realzar sus propiedades.
+        <article class="row align-items-center op">
+            <div class="col optext">
+                <h2>¿TOSTADO O TORRADO?</h2>
+                <p>Después de cultivar el grano y antes de llegar a tu taza, el café se tuesta para realzar sus
+                    propiedades.
 
-                La mayoría del café comercial es torrado, o sea tostado con azúcar, para tapar los defectos del café de
-                calidad baja o media, y el sabor amargo de los granos robusta.
+                    La mayoría del café comercial es torrado, o sea tostado con azúcar, para tapar los defectos del café
+                    de
+                    calidad baja o media, y el sabor amargo de los granos robusta.
 
-                El café de especialidad, en cambio, se tuesta de forma natural, sin agregar ningún químico.</p>
-            <img src="../images/prueba.png" alt="prueba" height="20%" width="20%">
+                    El café de especialidad, en cambio, se tuesta de forma natural, sin agregar ningún químico.</p>
+            </div>
+            <img class="col opimg" src="../images/TorradoTostado.jpg" alt="prueba">
         </article>
 
-        <article>
-            <img src="../images/prueba2.jpg" alt="prueba2" height="20%" width="20%">
-            <h2>¿EN GRANO O MOLIDO?</h2>
-            <p>El café en grano tostado conserva las propiedades de aroma y sabor si se consume antes de los 6 meses.
-                Para prepararlo primero necesitás molerlo, con un molino casero o
-                podés pedirlo ya molido donde lo compres. Una vez molido consumilo dentro del mes para conservar sus
-                propiedades.</p>
+        <article class="row align-items-center op">
+            <img class="col opimg" src="../images/prueba2.jpg" alt="prueba2">
+            <div class="col optext">
+                <h2>¿EN GRANO O MOLIDO?</h2>
+                <p>El café en grano tostado conserva las propiedades de aroma y sabor si se consume antes de los 6
+                    meses.
+                    Para prepararlo primero necesitás molerlo, con un molino casero o
+                    podés pedirlo ya molido donde lo compres. Una vez molido consumilo dentro del mes para conservar sus
+                    propiedades.</p>
+            </div>
         </article>
 
-        <article>
-            <h2>CAFÉ DE ESPECIALIDAD VS CAFÉ COMERCIAL</h2>
-            <p>El café de especialidad es preparado artesanalmente usando sólo granos de máxima calidad, 100% de tipo
-                arábica, con un proceso que reduce el tiempo entre el tostado y la taza.
+        <article class="row align-items-center op">
+            <div class="col optext">
+                <h2>CAFÉ DE ESPECIALIDAD VS CAFÉ COMERCIAL</h2>
+                <p>El café de especialidad es preparado artesanalmente usando sólo granos de máxima calidad, 100% de
+                    tipo
+                    arábica, con un proceso que reduce el tiempo entre el tostado y la taza.
 
-                El resultado es un café mucho más rico, más dulce, y un alimento más sano.
+                    El resultado es un café mucho más rico, más dulce, y un alimento más sano.
 
-                El café comercial está en supermercados, cadenas de cafeterías y restaurantes. Combina granos arábica y
-                robusta, y no distingue la calidad de los granos que utiliza. El tiempo entre el tostado y la taza puede
-                ser de meses o años.
+                    El café comercial está en supermercados, cadenas de cafeterías y restaurantes. Combina granos
+                    arábica y
+                    robusta, y no distingue la calidad de los granos que utiliza. El tiempo entre el tostado y la taza
+                    puede
+                    ser de meses o años.
 
-                Se obtiene un café con sabor más amargo y de menor calidad.</p>
-            <img src="../images/prueba.png" alt="prueba" height="20%" width="20%">
+                    Se obtiene un café con sabor más amargo y de menor calidad.</p>
+            </div>
+            <img class="col opimg" src="../images/versus.png" alt="prueba">
         </article>
     </section>
 

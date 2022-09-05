@@ -181,6 +181,19 @@ button {
   padding: 2em;
 }
 
+.op {
+  margin: auto;
+}
+
+.opimg {
+  height: 30em;
+  width: 18em;
+}
+
+.optext {
+  margin: 0 2em;
+}
+
 /* ----------- INCIO DEL FOOTER ----------- */
 .f_img {
   height: 3%;
